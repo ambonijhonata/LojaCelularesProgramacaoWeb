@@ -1,0 +1,194 @@
+/* *->Seleciona todos os elementos*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*inclui o padding e a borda na altura e largura dos elementos*/
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	background: radial-gradient(#fff, #7fb6f9);
+}
+
+main{
+	margin: 0;
+}
+
+#logo{
+	width: 250px;
+    margin-top: 20px;
+}
+
+#cabecalho{
+	display: flex;/*altera a altura e largura dos elementos para que se adequem ao espaço disponível para exibição.*/
+	align-items: center;
+	padding: 20px;
+}
+
+#menuPrincipal{
+	flex: 1;/* diz que os elementos cresceram no eixo principal*/
+	text-align: right;
+}
+
+#menuPrincipal ul{
+	display: inline-block;
+	list-style-type: none;
+}
+
+#menuPrincipal ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: #555;
+}
+
+p{
+	color: #555;
+}
+
+#cabecalhoPagina{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;/*vai empilhando os elementos lado a lado conforme a largura, se acabar, quebra uma linha*/
+	justify-content: space-around;
+}
+
+.col-2{
+	flex-basis: 50%;/*define que os elementos terão tamanho de 50% antes de eles serem dimensionados*/
+	min-width: 300px;
+}
+
+.col-2 img{
+	max-width: 100%;
+	padding: 50px 0;
+}
+.col-2 h1{
+	font-size: 50px;
+	line-height: 60px;/*espaçamento entre as linhas do texto*/
+	margin: 25px 0;
+}
+
+.btn{
+	display: inline-block;
+	background: #FF523B;
+	color: #FFF;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+
+.btn:hover{
+	background: #000000;
+}
+
+main .row{
+	margin-top: 70px;	
+}
+
+#carrinhoCompras{
+	width: 30px;
+	height: 30px;
+}
+
+#categoriasEmDestaque{
+	margin: 70px 0;
+}
+
+.col-3{
+	flex-basis: 30%;
+	min-width: 250px;
+	margin-bottom: 30px;
+}
+
+.col-3 img{
+	width: 100%;
+}
+
+.secaoPrincipal{
+	max-height: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.col-4{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+
+.col-4 img{
+	width: 100%;
+}
+
+.title{
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+}
+
+/* cria uma linha(elemento filho do title) laranja em baixo e no meio do título*/
+.title::after{
+	content: '';
+	background: #FF523B;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);/* joga a imagens dos produtos pra cima pra dar um efeitinho*/
+}
+
+h4{
+	color: #555;
+	font-weight: normal;
+}
+
+.col-4 p {
+	font-size: 14px;
+}
+
+.avaliacao{
+	color: #FF523B;
+}
+
+.col-4:hover{
+	transform: translateY(-5px);
+}
+
+#ofertas{
+	/*margin-top: 30%;*/
+	margin-left: 25px;
+	padding: 30px 0;
+
+}
+
+#ofertas .img-oferta{
+	padding: 50px;
+}
+
+small{
+	display: block;
+	color: #555;
+}
+
+#iphone11{
+	height: 305px;
+}
