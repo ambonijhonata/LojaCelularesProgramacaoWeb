@@ -5,9 +5,14 @@
 	box-sizing: border-box; /*inclui o padding e a borda na altura e largura dos elementos*/
 }
 
-body{
+body #index{
 	font-family: 'Poppins', sans-serif;
 	background: radial-gradient(#fff, #7fb6f9);
+}
+
+body #sobre{
+	font-family: 'Poppins', sans-serif;
+	background: #7fb6f9;
 }
 
 main{
@@ -123,7 +128,13 @@ main .row{
 	max-height: 1080px;
 	margin: auto;
 	padding-left: 25px;
-	padding-right: 25px;	
+	padding-right: 25px;
+}
+
+.secaoPrincipalSobre{
+	padding-bottom: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .col-4{
@@ -272,6 +283,6 @@ ul{
 }
 
 .copyright{
-	text-align: center;
-	
+	text-align: center;	
 }
+
