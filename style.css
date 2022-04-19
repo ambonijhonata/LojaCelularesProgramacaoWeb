@@ -5,7 +5,7 @@
 	box-sizing: border-box; /*inclui o padding e a borda na altura e largura dos elementos*/
 }
 
-body #index{
+#index{
 	font-family: 'Poppins', sans-serif;
 	background: radial-gradient(#fff, #7fb6f9);
 }
